@@ -1,18 +1,24 @@
-import Sidebar, { SidebarItem } from "./components/Sidebar"
+import React, { useState, useEffect } from "react";
+import LoadingPage from "./components/LoadingPage";
+import MainPage from "./components/MainPage";
 
-function App() {
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
 
   return (
     <>
-      <div className="flex">
-        <Sidebar>
-          
-        </Sidebar>
-      </div>
+      {isLoading ? <LoadingPage /> : <MainPage />}
     </>
-  )
-}
+  );
+};
 
-export default App
-
-
+export default App;
