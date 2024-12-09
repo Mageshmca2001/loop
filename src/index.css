@@ -5,8 +5,13 @@
 @tailwind utilities;
 
 body {
-    
-    font-family: 'Poppins', sans-serif;
-    background-color: steelblue;
-  }
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+input-container:hover .icon {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 

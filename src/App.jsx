@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingPage from "./components/LoadingPage";
-import MainPage from "./components/MainPage";
+import MainPage from "./pages/MainPage";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
@@ -15,9 +16,21 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      {isLoading ? <LoadingPage /> : <MainPage />}
-    </>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            isLoading ? (
+              <LoadingPage />
+            ) : (
+              <MainPage />
+            )
+          }
+        />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 };
 
