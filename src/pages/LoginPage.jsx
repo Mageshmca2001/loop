@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoImage from '../images/logo.png'; // Update this path based on your project structure
-import bgImage from '../images/logo1.png'; // Add your background image here
+import bgImage from '../images/city.png'; // Add your background image here
 
 const LoginPage = () => {
   const navigate = useNavigate();
