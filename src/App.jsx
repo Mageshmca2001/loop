@@ -1,6 +1,7 @@
 // App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import Users from './pages/User';
@@ -15,6 +16,7 @@ const App = () => {
     <Routes>
 
       <Route path="/" element={<LoginPage/>} />
+      <Route path="/" element={<Header/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/users' element={<Users/>}/>
       <Route path='/reports/daily' element={<Report/>}/>

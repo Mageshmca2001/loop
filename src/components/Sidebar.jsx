@@ -168,7 +168,6 @@ import {
   ChevronRight, 
   ChevronDown, 
   ChevronUp,
-  BarChart2,
 } from 'lucide-react'; 
 
 const Sidebar = ({ children }) => {   
@@ -196,11 +195,7 @@ const Sidebar = ({ children }) => {
       label: 'Users',       
       route: '/users',     
     },     
-    {       
-      icon: LogOut,       
-      label: 'Logout',       
-      route: '/logout',     
-    },    
+      
   ];   
 
   const toggleSidebar = () => setIsCollapsed(!isCollapsed);   
@@ -225,8 +220,7 @@ const Sidebar = ({ children }) => {
         </button>          
 
         <div className="h-16 flex items-center justify-center border-b border-gray-700">           
-          {!isCollapsed ? (             
-            <h1 className="text-xl font-bold">Admin Dashboard</h1>           
+          {!isCollapsed ? (              <h1 className="text-xl font-bold">Admin Dashboard</h1>           
           ) : (             
             <img src={logoImage} className="rounded-full w-10 h-10" alt="Logo" />           
           )}         
@@ -238,8 +232,7 @@ const Sidebar = ({ children }) => {
             <div key={item.route}>
               <Link
                 to={item.route}
-                className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                   
-                  isCollapsed ? 'justify-center' : 'justify-start'                 
+                className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                    isCollapsed ? 'justify-center' : 'justify-start'                 
                 }`}
                 onClick={() => item.subItems && handleDropdownToggle(item.route)}
               >
@@ -258,13 +251,14 @@ const Sidebar = ({ children }) => {
 
               {/* Dropdown for Reports */}
               {item.subItems && openDropdown === item.route && (
-                <div className="pl-8 mt-2">
+                <div 
+                  className={`pl-8 mt-2 transition-all duration-300 ${isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-96 overflow-auto'}`}
+                >
                   {item.subItems.map((subItem) => (
                     <Link
                       key={subItem.route}
                       to={subItem.route}
-                      className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                   
-                        isCollapsed ? 'justify-center' : 'justify-start'                 
+                      className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                    isCollapsed ? 'justify-center' : 'justify-start'                 
                       }`}
                     >
                       {subItem.icon && <subItem.icon className="w-5 h-5 mr-2" />}
@@ -289,5 +283,8 @@ const Sidebar = ({ children }) => {
 };  
 
 export default Sidebar;
+
+
+
 
 
