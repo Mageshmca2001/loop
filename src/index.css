@@ -9,6 +9,11 @@ body {
   font-size: 14.3px;
 }
 
+
+table {
+  font-family: 'Poppins', sans-serif; /* Ensures that the table uses Poppins font */
+}
+
 input-container:hover .icon {
   transform: scale(1.2);
   transition: transform 0.3s ease;

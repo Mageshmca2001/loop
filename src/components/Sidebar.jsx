@@ -156,14 +156,16 @@ const Sidebar = ({ onToggle }) => {
 export default Sidebar;*/
 
 
-import React, { useState } from 'react'; 
-import { Link } from 'react-router-dom'; 
+import React, { useState, useEffect } from 'react'; 
+import { Link, useLocation } from 'react-router-dom'; 
 import logoImage from '../images/logo.png'; 
 import {   
   LayoutDashboard, 
   FileText, 
+  Settings, 
   Users, 
-  LogOut, 
+  BarChart2   ,
+  Activity,
   ChevronLeft, 
   ChevronRight, 
   ChevronDown, 
@@ -172,7 +174,8 @@ import {
 
 const Sidebar = ({ children }) => {   
   const [isCollapsed, setIsCollapsed] = useState(false);   
-  const [openDropdown, setOpenDropdown] = useState(null);    // State for dropdown visibility
+  const [openDropdown, setOpenDropdown] = useState(null);   
+  const location = useLocation(); // Get current location
 
   const menuItems = [      
     {       
@@ -183,20 +186,33 @@ const Sidebar = ({ children }) => {
     {
       icon: FileText,
       label: 'Reports',
-      route: '#',  // No direct link, as it's a dropdown
+      route: null,  // Indicates dropdown
       subItems: [
         { icon: FileText, label: 'Daily Report', route: '/reports/daily' },
-        { icon: FileText,label: 'Monthly Report', route: '/reports/monthly' },
-        { icon: FileText,label: 'Meter Report', route: '/reports/meter' },
-      ],  // Submenu items for Reports
+        { icon: FileText, label: 'Monthly Report', route: '/reports/monthly' },
+        { icon: FileText, label: 'Meter Report', route: '/reports/meter' },
+      ],
     },
-    {       
-      icon: Users,       
-      label: 'Users',       
-      route: '/users',     
-    },     
-      
-  ];   
+    {
+      icon: Settings,
+      label: 'Configuration',
+      route: null, // Indicates dropdown
+      subItems: [
+        { icon: Users, label: 'Users', route: '/users' },
+      ],
+    },
+
+    {
+      icon: BarChart2   ,
+      label: 'Charts',
+      route: '/chart/chart', 
+    },
+    {
+      icon: Activity   ,
+      label: 'Analytics',
+      route: '/analytics', 
+    },
+  ]; 
 
   const toggleSidebar = () => setIsCollapsed(!isCollapsed);   
 
@@ -204,61 +220,90 @@ const Sidebar = ({ children }) => {
     setOpenDropdown(openDropdown === route ? null : route);   
   };    
 
+  useEffect(() => {
+    const currentPath = location.pathname;
+    const matchingMenuItem = menuItems.find(
+      (item) => item.subItems && item.subItems.some((sub) => sub.route === currentPath)
+    );
+
+    if (matchingMenuItem) {
+      setOpenDropdown(matchingMenuItem.route);
+    } else {
+      setOpenDropdown(null);
+    }
+  }, [location.pathname]);
+
   return (     
-    <div className="flex h-screen">       
+    <div className="flex h-screen bg-gray-100" style={{ fontFamily: 'Poppins, sans-serif' }}>       
       {/* Sidebar */}       
       <div         
-        className={`fixed h-screen bg-gray-800 text-white shadow-xl transition-all duration-300 ${           
+        className={`fixed h-screen bg-gray-900 text-white shadow-2xl transition-all duration-300 ${           
           isCollapsed ? 'w-20' : 'w-64'         
         }`}       
       >         
         <button           
           onClick={toggleSidebar}           
-          className="absolute top-4 right-[-6px] transform translate-x-1/2 bg-gray-700 border-2 border-white p-2 rounded-full z-10 hover:bg-gray-600 transition duration-300 hover:scale-105"         
+          className="absolute top-4 right-[-6px] transform translate-x-1/2 bg-gray-700 border-2 border-gray-300 p-2 rounded-full z-10 hover:bg-gray-600 transition duration-300 hover:scale-105"         
         >           
           {isCollapsed ? <ChevronRight /> : <ChevronLeft />}         
         </button>          
 
-        <div className="h-16 flex items-center justify-center border-b border-gray-700">           
-          {!isCollapsed ? (              <h1 className="text-xl font-bold">Admin Dashboard</h1>           
+        <div className="h-16 flex items-center justify-center border-b border-gray-800">           
+          {!isCollapsed ? (
+            <h1 className="text-xl font-bold tracking-widest">Admin Dashboard</h1>           
           ) : (             
             <img src={logoImage} className="rounded-full w-10 h-10" alt="Logo" />           
           )}         
         </div>          
 
         {/* Sidebar Navigation */}         
-        <nav className="mt-4">           
+        <nav className="mt-6">           
           {menuItems.map((item) => (
-            <div key={item.route}>
-              <Link
-                to={item.route}
-                className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                    isCollapsed ? 'justify-center' : 'justify-start'                 
-                }`}
-                onClick={() => item.subItems && handleDropdownToggle(item.route)}
-              >
-                <item.icon className="w-5 h-5" />
-                {!isCollapsed && (
-                  <div className="flex justify-between items-center w-full ml-3">
-                    <span>{item.label}</span>
-                    {item.subItems && (
+            <div key={item.label}>
+              {item.subItems ? (
+                // Dropdown Toggle Button
+                <button
+                  className={`w-full flex items-center px-4 py-3 hover:bg-gray-800 transition-all font-medium ${
+                    isCollapsed ? 'justify-center' : 'justify-start'
+                  }`}
+                  onClick={() => handleDropdownToggle(item.label)}
+                >
+                  <item.icon className="w-5 h-5" />
+                  {!isCollapsed && (
+                    <div className="flex justify-between items-center w-full ml-3">
+                      <span>{item.label}</span>
                       <div className="text-xs">
-                        {openDropdown === item.route ? <ChevronUp /> : <ChevronDown />}
+                        {openDropdown === item.label ? <ChevronUp /> : <ChevronDown />}
                       </div>
-                    )}
-                  </div>
-                )}
-              </Link>
+                    </div>
+                  )}
+                </button>
+              ) : (
+                // Regular Link
+                <Link
+                  to={item.route}
+                  className={`w-full flex items-center px-4 py-3 hover:bg-gray-800 transition-all font-medium ${
+                    isCollapsed ? 'justify-center' : 'justify-start'
+                  }`}
+                >
+                  <item.icon className="w-5 h-5" />
+                  {!isCollapsed && <span className="ml-3">{item.label}</span>}
+                </Link>
+              )}
 
-              {/* Dropdown for Reports */}
-              {item.subItems && openDropdown === item.route && (
+              {/* Dropdown Items */}
+              {item.subItems && openDropdown === item.label && (
                 <div 
-                  className={`pl-8 mt-2 transition-all duration-300 ${isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-96 overflow-auto'}`}
+                  className={`pl-8 mt-2 transition-all duration-300 ${
+                    isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-96 overflow-auto'
+                  }`}
                 >
                   {item.subItems.map((subItem) => (
                     <Link
                       key={subItem.route}
                       to={subItem.route}
-                      className={`w-full flex items-center px-4 py-3 hover:bg-gray-700 transition-all ${                    isCollapsed ? 'justify-center' : 'justify-start'                 
+                      className={`w-full flex items-center px-4 py-3 hover:bg-gray-800 transition-all font-light ${
+                        isCollapsed ? 'justify-center' : 'justify-start'
                       }`}
                     >
                       {subItem.icon && <subItem.icon className="w-5 h-5 mr-2" />}
@@ -268,21 +313,23 @@ const Sidebar = ({ children }) => {
                 </div>
               )}
             </div>
-          ))}
+          ))}         
         </nav>       
       </div>        
 
       {/* Main Content */}       
       <div         
-        className={`flex-1 ml-${isCollapsed ? '16' : '64'} transition-all duration-300`}       
+        className={`flex-1 ml-${isCollapsed ? '20' : '64'} transition-all duration-300`}       
       >         
-        <div className="p-4">{children}</div>       
+        <div className="p-6">{children}</div>       
       </div>     
     </div>   
   ); 
 };  
 
 export default Sidebar;
+
+
 
 
 

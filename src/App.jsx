@@ -8,6 +8,9 @@ import Users from './pages/User';
 import Report from './pages/reports/Dailyreport';
 import Monthly from './pages/reports/monthlyreport';
 import Meter from './pages/reports/meterreport';
+import Chart from './pages/chart/chart'
+
+
 
 
 const App = () => {
@@ -22,6 +25,7 @@ const App = () => {
       <Route path='/reports/daily' element={<Report/>}/>
       <Route path='/reports/monthly' element={<Monthly/>}/>
       <Route path='/reports/meter' element={<Meter/>}/>
+      <Route path="/chart/chart" element={<Chart/>}/>
 
     </Routes>
   );

@@ -16,7 +16,57 @@ const Report = () => {
     { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
@@ -36,7 +86,17 @@ const Report = () => {
     { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
@@ -46,8 +106,8 @@ const Report = () => {
     { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 1,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
@@ -56,67 +116,7 @@ const Report = () => {
     { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 1, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 2, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 3, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 4, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 5, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 6, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 7, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 8, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 9, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
-    { id: 10, DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
+    { id: 10,DateTime: "10.11.2024", Tested: "yes", completed: "yes", pending: "yes",Reworked: "yes" },
     
     
     
@@ -174,10 +174,6 @@ const Report = () => {
               <input type="date" id="fromDate" className="border border-gray-300 rounded mt-2 p-2 w-64" />
             </div>
 
-            <div className="flex flex-col">
-              <label htmlFor="toDate" className="block text-gray-700 font-semibold">To Date :</label>
-              <input type="date" id="toDate" className="border border-gray-300 rounded mt-2 p-2 w-64" />
-            </div>
           </div>
 
   <div class="flex-grow text-right">
@@ -193,96 +189,88 @@ const Report = () => {
 
   <h1 className='text-white font-semibold'> Daily Report-Table </h1>
 
-  <div className="flex justify-between items-center mt-4 mb-4">
-            
-            <div>
-  
-              <label htmlFor="entries" className="mr-2 text-white font-semibold">Show</label>
+  <div className="mt-4 flex justify-between items-center">
+            {/* Entries Per Page Selector */}
+            <div className="flex items-center space-x-2">
+              <label htmlFor="entries" className="text-white font-semibold">Entries per page:</label>
               <select
                 id="entries"
-                className="border border-gray-300 rounded p-1"
                 value={entries}
                 onChange={handleEntriesChange}
+                className="border border-gray-300 rounded p-2"
               >
                 <option value={10}>10</option>
-                <option value={25}>25</option>
+                <option value={20}>20</option>
+                <option value={30}>30</option>
                 <option value={50}>50</option>
-                <option value="All">All</option>
               </select>
-              <span className="ml-2 text-white font-semibold">entries</span>
             </div>
-            <div>
-              <label htmlFor="search" className="mr-2 text-white font-semibold">Search:</label>
+
+            {/* Search Input */}
+            <div className="flex items-center space-x-2">
               <input
                 type="text"
-                id="search"
-                className="border border-gray-300 rounded p-1"
+                placeholder="Search..."
                 onChange={handleSearch}
+                className="border border-gray-300 rounded p-2 w-64"
               />
-             
             </div>
-            </div>
+          </div>
 
-  </main>
-
-
-{/* main table */}
-
-<main className=' mt-4 p-4 rounded border border-2xl shadow-lg'>
-  
-<div className="flex justify-between items-center mt-4 mb-4">
-
-<table className="min-w-full bg-white border border-gray-300">
-          <thead>
-
+          {/* Table Display */}
+          <main className="bg-gray-200 mt-4 p-4 rounded border border-2xl shadow-lg">
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse">
+          <thead className="bg-gray-500 text-white">
             <tr>
-
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2">S.No</th>
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2">Date/Time</th>
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2"> No.of.Meter Tested</th>
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2"> No.of.Meter Completed</th>
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2"> No.of.Meter Pending</th>
-              <th className="border border-gray-300 text-white bg-blue-500 px-4 py-2"> No.of.Meter Reworked</th>
-              
+              <th className="border border-gray-300 px-4 py-2 text-center">S.No</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">DateTime</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Tested</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Completed</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Pending</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Reworked</th>
             </tr>
-            
-            </thead>
-            <tbody>
-            {paginatedData.map((row) => (
-              <tr key={row.id}>
-                <td className="border border-gray-300 text-center px-4 py-2">{row.id}</td>
-                <td className="border border-gray-300 text-center px-4 py-2">{row.Tested}</td>
-                <td className="border border-gray-300 text-center px-4 py-2">{row.completed}</td>
-                <td className="border border-gray-300 text-center px-4 py-2">{row.pending}</td>
-                <td className="border border-gray-300 text-center px-4 py-2">{row.Reworked}</td>
-                <td className="border border-gray-300 text-center px-4 py-2">
-                  <button className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">Edit</button>
-                  <button className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 ml-2">Delete</button>
-                </td>
+          </thead>
+          <tbody>
+            {paginatedData.map((entry, index) => (
+              <tr key={entry.id} className="hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2 text-center">{index + 1}</td> {/* S.No column */}
+                <td className="border border-gray-300 px-4 py-2 text-center">{entry.DateTime}</td>
+                <td className="border border-gray-300 px-4 py-2 text-center">{entry.Tested}</td>
+                <td className="border border-gray-300 px-4 py-2 text-center">{entry.completed}</td>
+                <td className="border border-gray-300 px-4 py-2 text-center">{entry.pending}</td>
+                <td className="border border-gray-300 px-4 py-2 text-center">{entry.Reworked}</td>
               </tr>
             ))}
           </tbody>
         </table>
+      </div>
+    </main>
 
 
-        
- </div>
-
-</main>
-
-<div className="flex justify-between items-center mt-4">
-          <div>
-            <span className="pagination-info">Showing {(currentPage - 1) * entries + 1} to {Math.min(currentPage * entries, data.length)} entries</span>
+          {/* Pagination */}
+          <div className="mt-4 flex justify-between items-center">
+            <button
+              onClick={handlePrevPage}
+              disabled={currentPage === 1}
+              className="bg-white text-gray-800 px-4 py-2 rounded disabled:bg-gray-300"
+            >
+              Previous
+            </button>
+            <span className="text-white font-semibold">Page {currentPage}</span>
+            <button
+              onClick={handleNextPage}
+              disabled={currentPage === Math.ceil(data.length / entries)}
+              className="bg-white text-gray-800 px-4 py-2 rounded disabled:bg-green-300"
+            >
+              Next
+            </button>
           </div>
-          <div className="flex space-x-1">
-            <button onClick={handlePrevPage} className="px-3 py-1 border border-gray-300 rounded bg-white">Previous</button>
-            <button onClick={handleNextPage} className="px-3 py-1 border border-gray-300 rounded bg-white">Next</button>
-          </div>
-        </div>
- 
+        </main>
       </div>
     </div>
   );
-}
+};
 
 export default Report;
+
