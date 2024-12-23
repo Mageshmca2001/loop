@@ -164,7 +164,7 @@ const Monthly = () => {
         </header>
 
         <header className="bg-gray-600 mt-4 p-3 rounded shadow flex justify-between items-center">
-          <h2 className="text-white text-base font-semibold">Select From Date to Current Date</h2>
+          <h2 className="text-white text-base font-semibold">Select Month </h2>
         </header>
 
         <main className="bg-gray-200 mt-4 p-4 rounded border border-2xl shadow-lg">

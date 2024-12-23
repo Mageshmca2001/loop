@@ -72,13 +72,13 @@ const Meter = () => {
       <div className="flex-1 p-3 bg-white-500 relative">
         <header className="bg-gray-600 p-3 rounded shadow flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-white text-base font-semibold">Daily Report</h1>
+            <h1 className="text-white text-base font-semibold">Meter Report</h1>
           </div>
         </header>
 
         <header className="bg-gray-600 mt-4 p-3 rounded shadow flex justify-between items-center">
           <h2 className="text-white text-base font-semibold">
-            Select From Date to Current Date
+            Select From Date 
           </h2>
         </header>
 
