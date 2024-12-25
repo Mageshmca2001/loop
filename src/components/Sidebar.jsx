@@ -321,7 +321,7 @@ const Sidebar = ({ children }) => {
       <div         
         className={`flex-1 ml-${isCollapsed ? '20' : '64'} transition-all duration-300`}       
       >         
-        <div className="p-6">{children}</div>       
+        <div className="p-3">{children}</div>       
       </div>     
     </div>   
   ); 
