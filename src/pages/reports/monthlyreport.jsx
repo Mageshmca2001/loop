@@ -245,10 +245,10 @@ const Monthly = () => {
           {paginatedData.map((entry, index) => (
             <tr key={entry.id} className="hover:bg-gray-100">
               <td className="border border-gray-300 px-4 py-2 text-center">{index + 1}</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">{entry.DateTime}</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">{entry.Tested}</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">{entry.completed}</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">{entry.pending}</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">{entry.title}</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">{entry.price}</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">{entry.description}</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">{entry.category}</td>
               <td className="border border-gray-300 px-4 py-2 text-center">{entry.Reworked}</td>
             </tr>
           ))}
