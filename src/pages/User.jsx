@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { useEffect } from 'react';
 import Sidebar from '../components/Sidebar'; // Make sure to import the Sidebar
 
 const Users = () => {
+
+   useEffect(() => {
+      document.title = 'BGT - User-details'; // Update the title for the Login Page
+    }, []);
+
   const [entries, setEntries] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const data = [

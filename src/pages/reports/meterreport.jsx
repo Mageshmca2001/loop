@@ -4,6 +4,10 @@ import Sidebar from '../../components/Sidebar';
 
 const Monthly = () => {
 
+   useEffect(() => {
+      document.title = 'BGT - MeterReports'; // Update the title for the Login Page
+    }, []);
+
   const [entries, setEntries] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const [data, setData] = useState([]); 

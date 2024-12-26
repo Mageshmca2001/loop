@@ -1,9 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoImage from '../images/logo1.png'; // Update this path based on your project structure
 import bgImage from '../images/Mac.jpg'; // Add your background image here
 
 const LoginPage = () => {
+
+  useEffect(() => {
+    document.title = 'BGT - Login'; // Update the title for the Login Page
+  }, []);
+
   const navigate = useNavigate();
 
   const handleNavigate = (e) => {

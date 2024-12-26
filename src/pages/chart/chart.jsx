@@ -24,6 +24,11 @@ ChartJS.register(
 );
 
 const Chart = () => {
+
+    useEffect(() => {
+      document.title = 'BGT - Charts'; // Update the title for the Login Page
+    }, []);
+  
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [
