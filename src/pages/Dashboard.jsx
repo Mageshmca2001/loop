@@ -23,21 +23,30 @@ const Dashboard = () => {
 };
 
 export default Dashboard;*/
-
-import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Sidebar from '../components/Sidebar'; // Adjust the path based on your project structure
 
 const Dashboard = () => {
+  
+  const [isSearchVisible, setSearchVisible] = useState(false);
+  const navigate = useNavigate(); // Create the navigate function
+
+  const toggleSearch = () => {
+    setSearchVisible(!isSearchVisible);
+  };
+
+  const handleLogout = () => {
+    // Clear any user authentication state or tokens here if needed
+    navigate('/'); // Redirect to the login page
+  };
+
   return (
-    <div className="flex h-screen">
-      
+    <div className="flex">
       <Sidebar />
-      
-      <Header/>
       
     </div>
   );
 };
 
-export default Dashboard;
+export default Dashboard ;
