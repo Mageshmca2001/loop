@@ -23,13 +23,12 @@ const Dashboard = () => {
 };
 
 export default Dashboard;*/
-
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar'; // Adjust the path based on your project structure
 
-const Header = () => {
+const Dashboard = () => {
+  
   const [isSearchVisible, setSearchVisible] = useState(false);
   const navigate = useNavigate(); // Create the navigate function
 
@@ -50,4 +49,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Dashboard ;
