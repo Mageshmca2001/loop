@@ -113,7 +113,7 @@ const Sidebar = ({ children }) => {
       >
         <button           
           onClick={toggleSidebar}           
-          className="absolute top-4 right-[-30px] transform translate-x-1/2 bg-gray-700 border-2 border-gray-300 p-2 rounded-full z-10 hover:bg-gray-600 transition duration-300 hover:scale-105"         
+          className="absolute top-4 right-[-28px] transform translate-x-1/2 bg-gray-700 border-2 border-gray-300 p-2 rounded-full z-10 hover:bg-gray-600 transition duration-300 hover:scale-105"         
         >           
           {isCollapsed ? <Menu className="w-6 h-6" /> : <ChevronLeft />}         
         </button>          

@@ -1,7 +1,7 @@
 // App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import RouteWithLoader from './router/RouteWithLoader';
 import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import Users from './pages/User';
@@ -18,15 +18,13 @@ const App = () => {
     
     <Routes>
 
-      <Route path="/" element={<LoginPage/>} />
-      <Route path="/" element={<Header/>}/>
-      <Route path='/dashboard' element={<Dashboard/>}/>
-      <Route path='/users' element={<Users/>}/>
-      <Route path='/reports/daily' element={<Report/>}/>
-      <Route path='/reports/monthly' element={<Monthly/>}/>
-      <Route path='/reports/meter' element={<Meter/>}/>
-      <Route path="/chart/chart" element={<Chart/>}/>
-
+      <Route path="/" element={<RouteWithLoader element={LoginPage} />} />
+      <Route path="/dashboard" element={<RouteWithLoader element={Dashboard} />} />
+      <Route path="/users" element={<RouteWithLoader element={Users} />} />
+      <Route path="/reports/daily" element={<RouteWithLoader element={Report} />} />
+      <Route path="/reports/monthly" element={<RouteWithLoader element={Monthly} />} />
+      <Route path="/reports/meter" element={<RouteWithLoader element={Meter} />} />
+      <Route path="/chart/chart" element={<RouteWithLoader element={Chart} />} />
     </Routes>
   );
 };

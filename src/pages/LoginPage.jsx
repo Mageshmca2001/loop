@@ -42,7 +42,7 @@ const LoginPage = () => {
       {/* Login Content */}
       <div className="flex items-center justify-center h-full">
         <div
-          className="bg-opacity-100 backdrop-blur-md rounded-lg p-8 shadow-lg w-100"
+          className=" w-auto max-w-md bg-opacity-100 backdrop-blur-md rounded-lg p-8 shadow-lg "
           style={{
             backgroundColor: 'rgb(80, 120, 230)', 
           }}
@@ -61,7 +61,7 @@ const LoginPage = () => {
               <input
                 type="text"
                 placeholder="Username"
-                className="w-full pl-10 pr-4 py-3 rounded-lg bg-transparent border-b-2 border-gray-300 text-white text-ml focus:outline-none focus:border-white placeholder-white"
+                className="w-full pl-10 pr-4 py-3 rounded-lg bg-transparent border-b-2 border-gray-300 text-white text-base focus:outline-none focus:border-white placeholder-white"
               />
             </div>
 
@@ -70,7 +70,7 @@ const LoginPage = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full pl-10 pr-4 py-3 rounded-lg bg-transparent border-b-2 border-gray-300 text-white text-ml focus:outline-none focus:border-white placeholder-white"
+                className="w-full pl-10 pr-4 py-3 rounded-lg bg-transparent border-b-2 border-gray-300 text-white text-base focus:outline-none focus:border-white placeholder-white"
               />
             </div>
 
@@ -98,7 +98,7 @@ const LoginPage = () => {
           </form>
 
           <div className="text-center mt-4">
-            <a href="#" className="text-white text-sm hover:underline">
+            <a href="#" className="text-white text-base hover:underline">
               Forgot Password?
             </a>
           </div>
