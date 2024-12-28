@@ -121,7 +121,7 @@ const Monthly = () => {
         </header>
 
         <header className="bg-gray-600 mt-4 p-3 rounded shadow flex justify-between items-center">
-          <h2 className="text-white text-base font-semibold">Select Meter </h2>
+          <h2 className="text-white text-base font-semibold">Select Meter</h2>
         </header>
 
   <main className="bg-gray-200 mt-4 p-4 rounded border border-2xl shadow-lg">
@@ -132,11 +132,11 @@ const Monthly = () => {
       {/* Year Selector */}
       <div className="flex flex-col">
         <label htmlFor="selectYear" className="mb-4 block text-gray-700 font-semibold">
-          Select Year:
+          Select Meter:
         </label>
         <select id="selectYear" className="border border-gray-300 rounded p-2 w-64">
           <option value="" disabled selected>
-            Select Year
+            Select Meter
           </option>
 
           {Array.from({ length: 20 }, (_, i) => {
