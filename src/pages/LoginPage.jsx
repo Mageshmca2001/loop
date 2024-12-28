@@ -42,9 +42,9 @@ const LoginPage = () => {
       {/* Login Content */}
       <div className="flex items-center justify-center h-full">
         <div
-          className=" w-auto max-w-md bg-opacity-100 backdrop-blur-md rounded-lg p-8 shadow-lg "
+          className=" w-300% max-w-md bg-opacity-100 backdrop-blur-md rounded-lg p-8 shadow-lg "
           style={{
-            backgroundColor: 'rgb(80, 120, 230)', 
+            backgroundColor: 'rgb(79, 122, 240)', 
           }}
         >
           <div className="flex flex-col items-center">
