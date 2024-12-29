@@ -28,8 +28,7 @@ export default Dashboard;*/
 import React, { useState } from 'react';
 import  { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from '../components/Sidebar'; // Adjust the path based on your project structure
-
+import Layout from '../components/DashboardLayout'
 const Dashboard = () => {
 
   useEffect(() => {
@@ -50,7 +49,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex">
-      <Sidebar />
+      <Layout/>
       
     </div>
   );
