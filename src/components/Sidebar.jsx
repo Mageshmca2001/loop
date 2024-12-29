@@ -11,7 +11,6 @@ import {
   ChevronUp,
   Menu, 
 } from 'lucide-react'; 
-
 const Sidebar = ({ children }) => {   
   const [isCollapsed, setIsCollapsed] = useState(false);   
   const [openDropdown, setOpenDropdown] = useState(null);   
@@ -103,7 +102,7 @@ const Sidebar = ({ children }) => {
     <div className="flex h-screen" style={{ fontFamily: 'Poppins, sans-serif' }}>       
       <div
         className={`fixed h-screen bg-blue-800 text-[rgb(255,255,255)] shadow-2xl transition-all duration-300 ease-in-out
-          ${isCollapsed ? 'w-20' : 'w-64'}`}
+          ${isCollapsed ? 'w-24' : 'w-56'}`} 
       >
         <button           
           onClick={toggleSidebar}           
@@ -209,17 +208,18 @@ const Sidebar = ({ children }) => {
                     </div>
                   )}
                 </div>
-              ))}
+              ))} 
             </div>
           ))}
         </nav>
       </div>
 
-      <div className={`flex-1 ml-${isCollapsed ? '20' : '64'} transition-all duration-300`}>       
+      <div className={`flex-1 ml-${isCollapsed ? '24' : '56'} transition-all duration-300`}> {/* Adjusted margin-left values */}
         <div className="p-3">{children}</div>       
       </div>     
     </div>   
   ); 
 };
+
 
 export default Sidebar;
