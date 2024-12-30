@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from 'react';
-import Sidebar from '../components/Sidebar'; // Make sure to import the Sidebar
+import Sidebar from '../components/Sidebar/Sidebar'; // Make sure to import the Sidebar
 
 const Users = () => {
 

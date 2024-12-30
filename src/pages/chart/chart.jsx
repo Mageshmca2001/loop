@@ -11,7 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 
-import Sidebar from '../../components/Sidebar';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 ChartJS.register(
   CategoryScale,
