@@ -8,8 +8,6 @@ import Users from './pages/User';
 import Report from './pages/reports/Dailyreport';
 import Monthly from './pages/reports/monthlyreport';
 import Meter from './pages/reports/meterreport';
-import Chart from './pages/chart/chart'
-
 
 
 
@@ -24,7 +22,7 @@ const App = () => {
       <Route path="/reports/daily" element={<RouteWithLoader element={Report} />} />
       <Route path="/reports/monthly" element={<RouteWithLoader element={Monthly} />} />
       <Route path="/reports/meter" element={<RouteWithLoader element={Meter} />} />
-      <Route path="/chart/chart" element={<RouteWithLoader element={Chart} />} />
+
     </Routes>
   );
 };
